@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Lauriethefish/QuestPatcher.QMod/main/QuestPatcher.QMod/Resources/qmod.schema.json",
+  "_QPVersion": "0.1.1",
+  "name": "${mod_name}",
+  "id": "${mod_id}",
+  "author": "TheZipCreator",
+  "version": "0.1.0",
+  "packageId": "com.beatgames.beatsaber",
+  "packageVersion": "1.35.0_8016709773",
+  "description": "Displays a ranking of how you're doing on the map you're playing compared to all other times you played that map.",
+  "dependencies": [],
+  "modFiles": ["${binary}"],
+
+  "libraryFiles": [],
+  "fileCopies": []
+}
