@@ -41,7 +41,8 @@ MOD_EXTERN_FUNC void late_load() noexcept {
 	BSML::Register::RegisterSettingsMenu("SelfCompete", &selfcompete::did_activate, false);
 
 	PaperLogger.info("Installing hooks...");
-	selfcompete::register_hooks();
+	selfcompete::register_selfcompete_hooks();
+	selfcompete::register_menu_hooks();
 	PaperLogger.info("Installed all hooks!");
 
 }

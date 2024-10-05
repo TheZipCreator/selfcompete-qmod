@@ -1,8 +1,11 @@
 # SelfCompete
+*When you want to play multiplayer, but you don't have any friends.*
 
 Displays a ranking of how you're doing on the map you're playing compared to all other times you played that map.
 
-Use `qpm s build` to build
+
+To build, first run `git submodule fetch --recursive`, then run `qpm s build`.
+
 Same goes for `qpm s copy` and `qpm s qmod`
 
 ## Credits

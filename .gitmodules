@@ -1,0 +1,3 @@
+[submodule "src/bsor"]
+	path = src/bsor
+	url = https://github.com/TheZipCreator/bsor

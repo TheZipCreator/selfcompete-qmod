@@ -10,6 +10,8 @@
 
 #define SELFCOMPETE_FORMAT_VERSION 0
 
+#define SELFCOMPETE_BEATLEADER_DIR "/beatleader"
+
 namespace selfcompete {
 	// keeps a score
 	class ScoreKeeper {
@@ -42,16 +44,21 @@ namespace selfcompete {
 		SafePtrUnity<HMUI::CurvedTextMeshPro> rank_text; // text that states the rank
 		std::vector<std::unique_ptr<ScoreKeeper>> score_keepers; // vector of score keepers
 		FILE *recorder_fp; // pointer to the recorder file pointer
+		std::string recorder_file; // path to recorder file
 	};
 	extern State state;
 
 	// registers hooks
-	void register_hooks(void);
-
+	void register_selfcompete_hooks(void);
+	
+	// gets a level directory
+	std::string get_level_dir(GlobalNamespace::BeatmapKey key);
+	// gets a level directory
+	std::string get_level_dir(std::string id, std::string characteristic, std::string difficulty);
 	// activates selfcompete
 	void activate(GlobalNamespace::BeatmapKey key);
 	// deactivates selfcompete
-	void deactivate(void);
+	void deactivate(bool save_recording = true);
 	// updates selfcompete
 	void update(float time, int score);
 }
