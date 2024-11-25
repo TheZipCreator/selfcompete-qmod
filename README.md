@@ -1,6 +1,8 @@
 # SelfCompete
 *When you want to play multiplayer, but you don't have any friends.*
 
+**NOTICE: This repository has been moved to [sourcehut](https://sr.ht/~thezipcreator/selfcompete-qmod/)**
+
 Displays a ranking of how you're doing on the map you're playing compared to all other times you played that map.
 
 
